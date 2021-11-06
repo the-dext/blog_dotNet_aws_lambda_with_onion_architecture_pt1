@@ -1,0 +1,37 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Transform" : "AWS::Serverless-2016-10-31",
+  "Description" : "Starting template for an AWS Serverless Application.",
+  "Parameters" : {
+  },
+  "Resources" : {
+    "GetProducts" : {
+      "Type" : "AWS::Serverless::Function",
+      "Properties": {
+        "Handler": "GetProductsFunction::GetProducts.Function::FunctionHandler",
+        "Runtime": "dotnetcore3.1",
+        "CodeUri": "",
+        "Description": "GetProducts function",
+        "MemorySize": 256,
+        "Timeout": 30,
+        "Role": null,
+        "Policies": [ "AWSLambda_FullAccess" ],
+        "Events": {
+          "ProxyResource": {
+            "Type": "Api",
+            "Properties": {
+              "Path": "/Products",
+              "Method": "GET"
+            }
+          }
+        }
+      }
+    }
+  },
+  "Outputs" : {
+    "ApiURL" : {
+        "Description" : "API endpoint URL for Prod environment",
+        "Value" : { "Fn::Sub" : "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/" }
+    }
+  }
+}

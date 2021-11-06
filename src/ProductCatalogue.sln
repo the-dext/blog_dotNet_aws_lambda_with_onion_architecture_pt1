@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetProducts", "GetProductsLambda\GetProducts.csproj", "{5BDE1288-B968-477C-9DD5-755631567F1B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogue.Application", "ProductCatalogue.Application\ProductCatalogue.Application.csproj", "{A7847574-DF47-4EFD-943C-841C5B78141B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogue.Domain", "ProductCatalogue.Domain\ProductCatalogue.Domain.csproj", "{93BD6FF9-285D-4796-8AF6-C07508A741AC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductCatalogue.Persistence", "ProductCatalogue.DataAccess\ProductCatalogue.Persistence.csproj", "{184FE7FA-18A2-4CC2-A7BF-E12FBEADC509}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{740DB792-9A38-4C8E-B1B7-42D8ED1F6F85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{C2ABCD81-6F60-4203-ADEA-221E88A8068C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serverless", "Serverless", "{F4A67A4A-4BE2-4DA8-8CF7-9975E3FAD9DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{23DC02B6-5DDE-488A-A5D0-A2F62A9AB65F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lambdas", "Lambdas", "{E1D5D893-1FF8-4C11-A93C-ED156649AA2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GetProductBySku", "GetProductBySku\GetProductBySku.csproj", "{12DC5608-8A07-4850-9ACE-67D0B159D234}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{962A853B-E66D-4409-BBE3-2A3001A6868B}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambdaLogger", "LambdaLogger\LambdaLogger.csproj", "{C41A2369-6DFE-40BA-8CC8-6ADF5B454104}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BDE1288-B968-477C-9DD5-755631567F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDE1288-B968-477C-9DD5-755631567F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDE1288-B968-477C-9DD5-755631567F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDE1288-B968-477C-9DD5-755631567F1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7847574-DF47-4EFD-943C-841C5B78141B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7847574-DF47-4EFD-943C-841C5B78141B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7847574-DF47-4EFD-943C-841C5B78141B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7847574-DF47-4EFD-943C-841C5B78141B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93BD6FF9-285D-4796-8AF6-C07508A741AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93BD6FF9-285D-4796-8AF6-C07508A741AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93BD6FF9-285D-4796-8AF6-C07508A741AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93BD6FF9-285D-4796-8AF6-C07508A741AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{184FE7FA-18A2-4CC2-A7BF-E12FBEADC509}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{184FE7FA-18A2-4CC2-A7BF-E12FBEADC509}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{184FE7FA-18A2-4CC2-A7BF-E12FBEADC509}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{184FE7FA-18A2-4CC2-A7BF-E12FBEADC509}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12DC5608-8A07-4850-9ACE-67D0B159D234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12DC5608-8A07-4850-9ACE-67D0B159D234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12DC5608-8A07-4850-9ACE-67D0B159D234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12DC5608-8A07-4850-9ACE-67D0B159D234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C41A2369-6DFE-40BA-8CC8-6ADF5B454104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41A2369-6DFE-40BA-8CC8-6ADF5B454104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41A2369-6DFE-40BA-8CC8-6ADF5B454104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41A2369-6DFE-40BA-8CC8-6ADF5B454104}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5BDE1288-B968-477C-9DD5-755631567F1B} = {E1D5D893-1FF8-4C11-A93C-ED156649AA2E}
+		{A7847574-DF47-4EFD-943C-841C5B78141B} = {23DC02B6-5DDE-488A-A5D0-A2F62A9AB65F}
+		{93BD6FF9-285D-4796-8AF6-C07508A741AC} = {C2ABCD81-6F60-4203-ADEA-221E88A8068C}
+		{184FE7FA-18A2-4CC2-A7BF-E12FBEADC509} = {740DB792-9A38-4C8E-B1B7-42D8ED1F6F85}
+		{E1D5D893-1FF8-4C11-A93C-ED156649AA2E} = {F4A67A4A-4BE2-4DA8-8CF7-9975E3FAD9DC}
+		{12DC5608-8A07-4850-9ACE-67D0B159D234} = {E1D5D893-1FF8-4C11-A93C-ED156649AA2E}
+		{C41A2369-6DFE-40BA-8CC8-6ADF5B454104} = {740DB792-9A38-4C8E-B1B7-42D8ED1F6F85}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98DFCD58-DF6C-42DD-960D-CBF834910E86}
+	EndGlobalSection
+EndGlobal
